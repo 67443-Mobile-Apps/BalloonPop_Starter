@@ -1,4 +1,5 @@
-##Balloon Pop Starter Code
+Balloon Pop Starter Code
+---
 
 This is the starter code for the in-class exercise for the Balloon Pop game.  The code is mostly complete, but there are two things we still have to do.  First, we have to handle the touches -- critically important to this game.  Second, we have to define what will happen when a balloon is popped.
 
