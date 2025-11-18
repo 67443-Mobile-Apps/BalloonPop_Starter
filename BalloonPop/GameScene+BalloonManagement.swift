@@ -228,6 +228,19 @@ extension GameScene {
         }
     }
 
+     /* Start the difficulty progression timer that makes the game progressively harder
+
+     **Note**: This timer runs every X seconds and gradually reduces the spawn interval,
+     causing balloons to appear more frequently. This creates a natural difficulty curve
+     that keeps the game engaging as players improve.
+    */
+    func startDifficultyProgression() {
+        difficultyTimer = Timer.scheduledTimer(withTimeInterval: difficultyIncreaseInterval, repeats: true) { [weak self] _ in
+            self?.increaseDifficulty()
+        }
+    }
+
+
   
     // MARK: - Balloon Popping
 
